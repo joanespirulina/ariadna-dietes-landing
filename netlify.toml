@@ -1,0 +1,14 @@
+## Configuració de Netlify per al projecte
+
+[build]
+  # No hi ha cap sistema de build complex: simplement deixem Netlify instal·lar dependències per a la funció.
+  # Si cal executar una comanda, es podria utilitzar per exemple `npm install`, però el nostre funcionament
+  # no depèn de cap paquet instal·lat, ja que utilitzem el mòdul `https` integrat.
+  publish = "."
+  functions = "netlify/functions"
+
+# Variables d'entorn (s'estableixen a l'entorn de Netlify)
+#[[redirects]]
+#  from = "/success"
+#  to = "/success.html"
+#  status = 200
